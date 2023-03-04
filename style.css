@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@200&display=swap');
+
+:root {
+    --white:#ffffff;
+    --shapka:#151a5c;
+    --fon:#000000;
+    --knopo4ka:#151a5c;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+body{
+    background-color: var(--fon);
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+
+}
+section{
+    padding: 2rem 9%;
+}
+section:nth-child(even){
+    background: var(--fon);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--shapka);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    box-shadow: var(--box-shadow);
+}
+.heading{
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #ffffff;
+    background: var(--knopo4ka);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 8rem 3rem;
+}
+.btn:hover{
+    background: var(--white);
+    color: var(--knopo4ka);
+    letter-spacing: .1rem;
+}
+header .logo{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+header .logo i{
+    color: var(--shapka);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #ffffff;
+}
+header .navbar a.ative,
+header .navbar a:hover{
+    color: var(#fff);
+    background: var(--white);
+}
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #151a5c;
+    border-radius: 50%;
+    background: var(--white);
+}
+header .icons i:hover,
+header .icons a:hover{
+    color: var(--white);
+    background: #151a5c;
+    transform: rotate(360deg);
+}
+header .icons #menu-bars{
+    display: none;
+}
+.home{
+    padding: 0;
+}
+.home .box{
+   height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    padding: 2rem 9%;
+}
+.home .box{
+    justify-content: flex-start;
+
+}
+.home .box.second{
+    justify-content: flex-end;
+}
+.home .box .content{
+width: 50rem;
+}
+.home .box .content h3{
+    font-size: 6rem;
+    color:#fff;
+    padding: 5rem;
+    text-transform: uppercase;
+}
+.home .box .content p{
+    line-height: 2;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0 ;
+}
+
+.kpop{
+    padding:5rem;
+}
+
+.kpop .box{
+    width: 355px;
+    height: 355px;
+}
+
+.kpop .content h3{
+    font-size: 1.7rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.kpop .content P{
+    font-size: 1.2rem;
+    color:#fff;
+    text-decoration: none;
+
+}
+
+.action{
+    padding:5rem;
+}
+
+.action .box{
+   width:355px;
+   height:355px;
+}
+
+.action .content h3{
+    font-size: 1.7rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.action .content P{
+    font-size: 1.2rem;
+    color:#fff;
+    text-decoration: none;
+
+}
+
+.advise{
+    padding:5rem;
+}
+
+.advise .box{
+    width:355px;
+    height:355px;
+ }
+ 
+ .advise .content h3{
+     font-size: 1.7rem;
+     color: #ffffff;
+     text-transform: uppercase;
+     text-align: center;
+ }
+ 
+ .advise .content P{
+     font-size: 1.2rem;
+     color:#fff;
+     text-decoration: none;
+ 
+ }
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;   
+}
+
+.copyright .logo{
+    color: var(--white);
+    font-size: 2.1rem;
+    font-weight: bolder;
+}
+
+.copyright p{
+    font-size: 0.9rem;
+    color: var(--white);
+    font-size:2rem;
+}
+
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+        
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+
+@media(max-width: 768px)
+{
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+    }
+}
